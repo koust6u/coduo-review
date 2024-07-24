@@ -57,7 +57,7 @@ jobs:
                   "type": "section",
                   "text": {
                     "type": "mrkdwn",
-                    "text": "${{ env.SLACK_USER_MENTIONS }} PR 요청 왔어요. 코드 리뷰해주세요🔔: <${{ github.event.pull_request.html_url }}|${{ github.event.pull_request.title }}>"
+                    "text": "${{github.event.pull_request.user.login}}님이 PR을 요청했습니다.\n🔔${{ env.SLACK_USER_MENTIONS }} PR 요청 왔어요. 코드 리뷰해주세요🔔: <${{ github.event.pull_request.html_url }}|${{ github.event.pull_request.title }}>"
                   }
                 }
               ]
