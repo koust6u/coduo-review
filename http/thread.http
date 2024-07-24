@@ -3,11 +3,11 @@ POST localhost:8080/github/thread
 Content-Type: application/json
 
 {
-  "ts": "2",
-  "url": "1"
+  "ts": "1234.21312",
+  "url": "http://some.url"
 }
 
 
 ### 조회
 GET localhost:8080/github/thread
-GITHUB_URL: 1
+GITHUB_URL: http://some.url
