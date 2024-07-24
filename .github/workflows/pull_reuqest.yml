@@ -48,7 +48,7 @@ jobs:
         id: slack-pr-opened
         uses: slackapi/slack-github-action@v1.26.0
         with:
-          channel-id: 'C07D66QKE1M'
+          channel-id: 'C07DN3TETSL'
           payload: |
             {
               "text": "Backend PR opened: ${{ github.event.pull_request.html_url }}",
