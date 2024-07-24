@@ -59,9 +59,8 @@ jobs:
                     "type": "mrkdwn",
                     "text": "
                     🔔*PR 요청 왔어요. 코드 리뷰해주세요*🔔 \n
-                    `${{github.event.pull_request.title}}`에 대한 코드 리뷰를 해주세요.\n
-                    ${{ env.SLACK_USER_MENTIONS }}\n
-                    <${{ github.event.pull_request.html_url }}|${{ github.event.pull_request.title }}> 
+                    <`${{github.event.pull_request.title}}`에 대한 코드 리뷰를 해주세요.|${{ github.event.pull_request.title }}>\n
+                    ${{ env.SLACK_USER_MENTIONS }}
                     "
                   }
                 }
