@@ -30,7 +30,7 @@ jobs:
       - name: Send Slack notification
         uses: slackapi/slack-github-action@v1.22.0
         with:
-          channel-id: 'C07DN3TETSL'
+          channel-id: 'C07D66QKE1M'
           payload: |
             {
               "text": "Code review requested for Backend PR: ${{ github.event.pull_request.html_url }}",
