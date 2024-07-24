@@ -39,7 +39,7 @@ jobs:
                   "type": "section",
                   "text": {
                     "type": "mrkdwn",
-                    "text": ".📫<@${{ env[format('{0}', env.GITHUB_UID)] }}>님 PR에 대한 리뷰가 도착했어요.📫"
+                    "text": "📫<@${{ env[format('{0}', env.GITHUB_UID)] }}>님 PR에 대한 리뷰가 도착했어요.📫"
                   }
                 }
               ],
