@@ -24,7 +24,6 @@ jobs:
       - name: Send HTTP request and extract GitHub IDs
         id: extract_github_ids
         run: |
-          # Send HTTP request
           response=$(curl -s -H "Content-Type: application/json" \
                            -H "Github_id: ${{ github.event.pull_request.user.login }}" \
                            http://43.200.237.127:8080/member)
