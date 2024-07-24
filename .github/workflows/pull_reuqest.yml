@@ -2,7 +2,7 @@ name: PULL_REQUEST
 
 on:
   pull_request:
-    types: [opened]
+    types: [opened, reopened]
      
 env:
   koust6u: U07D1PWSLSG
