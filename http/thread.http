@@ -1,0 +1,13 @@
+### 생성
+POST localhost:8080/github/thread
+Content-Type: application/json
+
+{
+  "ts": "2",
+  "url": "1"
+}
+
+
+### 조회
+GET localhost:8080/github/thread
+GITHUB_URL: 1
