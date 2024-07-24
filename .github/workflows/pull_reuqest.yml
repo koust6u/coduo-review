@@ -64,3 +64,9 @@ jobs:
             }
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+
+      - name: thread store api request
+        run: |
+          curl -X POST http://43.200.237.127:8080/github/thread \
+          -H "Content-Type: application/json" \
+          -d '{"ts": "${{steps.slack-pr-opened.outputs.ts}}", "url": "${{github.event.pull_request.html_url}}"}'
