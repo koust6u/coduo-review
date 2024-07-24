@@ -3,6 +3,9 @@ name: PULL_REQUEST
 on:
   pull_request:
     types: [open]
+    branches:
+      - '**'
+     
 env:
   koust6u: U07D1PWSLSG
   kelly6bf: U07DSB12K99
